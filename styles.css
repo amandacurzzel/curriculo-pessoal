@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Decalotype-Bold';
+    src: url("fonts/Decalotype/OTF/Decalotype-Bold.otf");
+}
+@font-face {
+    font-family: 'Decalotype-Light';
+    src: url("fonts/Decalotype/OTF/Decalotype-Light.otf");
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Decalotype-Light';
+    color: #403b3b;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Decalotype-Bold';
+    color: #ff7948;
+}
+
+.style-bar {
+    position: absolute;
+    height: 100%;
+    width: 15px;
+    background-color: #ff7948;
+    z-index: -1;
+}
+
+header {
+    margin: auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+
+}
+.profile-photo-container {
+    position: relative;
+    min-width: 185px;
+    height: 180px;
+}
+.profile-photo {
+    height: 150px;
+    border-radius: 100%;
+    border: solid 6px #ff7948;
+}
+.profile-symbol {
+    height: 100px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+.title-name {
+    font-size: 26px;
+}
+
+.profile-info-container {
+    background-color: #f8f7f4;
+    padding: 20px 5% 20px 7%;
+    display: flex;
+    justify-content: space-between;
+}
+.profile-about {
+    max-width: 45%;
+}
+.profile-about p {
+    margin: 0;
+}
+
+
+
