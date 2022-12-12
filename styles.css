@@ -7,15 +7,14 @@
     src: url("fonts/Decalotype/OTF/Decalotype-Light.otf");
 }
 
-html, body {
+html, body, main {
     height: 100%;
+    margin: 0;
 }
 
 body {
-    position: relative;
-    margin: 0;
-    font-family: 'Decalotype-Light';
-    color: #403b3b;
+    background-color: #3b3b3b;
+    background-image: url('images/symbol-pattern.png');
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Decalotype-Bold';
@@ -30,9 +29,19 @@ h1, h2, h3, h4, h5, h6 {
     z-index: -1;
 }
 
+main {
+    position: relative;
+    margin: 0 20%;
+    font-family: 'Decalotype-Light';
+    color: #403b3b;
+    background-color: white;
+    z-index: -99;
+}
+
+
 header {
     margin: auto;
-    width: 70%;
+    width: 75%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,6 +52,7 @@ header {
     position: relative;
     min-width: 185px;
     height: 180px;
+    margin-left: 25px;
 }
 .profile-photo {
     height: 150px;
@@ -55,7 +65,6 @@ header {
     right: 0;
     bottom: 0;
     z-index: -1;
-
 }
 .title-name {
     font-size: 26px;
@@ -63,7 +72,7 @@ header {
 
 .profile-info-container {
     background-color: #f8f7f4;
-    padding: 20px 5% 20px 7%;
+    padding: 20px 5% 30px 10%;
     display: flex;
     justify-content: space-between;
 }
